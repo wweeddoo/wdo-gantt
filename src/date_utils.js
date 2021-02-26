@@ -7,7 +7,7 @@ const SECOND = 'second';
 const MILLISECOND = 'millisecond';
 
 const month_names = {
-    fr: [
+    en: [
         'January',
         'February',
         'March',
@@ -63,7 +63,7 @@ const month_names = {
         'Novembro',
         'Dezembro'
     ],
-    en: [
+    fr: [
         'Janvier',
         'Février',
         'Mars',
@@ -160,7 +160,7 @@ export default {
         return date_string + (with_time ? ' ' + time_string : '');
     },
 
-    format(date, format_string = 'YYYY-MM-DD HH:mm:ss.SSS', lang = 'en') {
+    format(date, format_string = 'YYYY-MM-DD HH:mm:ss.SSS', lang = 'fr') {
         const values = this.get_date_values(date).map(d => padStart(d, 2, 0));
         const format_map = {
             YYYY: values[0],
