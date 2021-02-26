@@ -7,7 +7,7 @@ const SECOND = 'second';
 const MILLISECOND = 'millisecond';
 
 const month_names = {
-    en: [
+    fr: [
         'January',
         'February',
         'March',
@@ -63,7 +63,7 @@ const month_names = {
         'Novembro',
         'Dezembro'
     ],
-    fr: [
+    en: [
         'Janvier',
         'Février',
         'Mars',
