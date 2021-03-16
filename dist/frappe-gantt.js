@@ -10,7 +10,7 @@ const SECOND = 'second';
 const MILLISECOND = 'millisecond';
 
 const month_names = {
-    fr: [
+    en: [
         'January',
         'February',
         'March',
@@ -66,7 +66,7 @@ const month_names = {
         'Novembro',
         'Dezembro'
     ],
-    en: [
+    fr: [
         'Janvier',
         'Février',
         'Mars',
@@ -163,7 +163,7 @@ var date_utils = {
         return date_string + (with_time ? ' ' + time_string : '');
     },
 
-    format(date, format_string = 'YYYY-MM-DD HH:mm:ss.SSS', lang = 'en') {
+    format(date, format_string = 'YYYY-MM-DD HH:mm:ss.SSS', lang = 'fr') {
         const values = this.get_date_values(date).map(d => padStart(d, 2, 0));
         const format_map = {
             YYYY: values[0],
@@ -1109,7 +1109,7 @@ class Gantt {
             date_format: 'YYYY-MM-DD',
             popup_trigger: 'click',
             custom_popup_html: null,
-            language: 'en'
+            language: 'fr'
         };
         this.options = Object.assign({}, default_options, options);
     }
